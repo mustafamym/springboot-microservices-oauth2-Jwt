@@ -70,3 +70,7 @@ Ex: `spring-boot-microservices-series> docker-compose up -d catalog-service --bu
     * hostname: shoppingcart-ui
     * Ports: 18080:8080
     * URL: http://localhost:18080
+
+     # Shopping UI
+
+    ![alt text](/screenshot/homepage.png)

@@ -74,3 +74,79 @@ Ex: `spring-boot-microservices-series> docker-compose up -d catalog-service --bu
      # Shopping UI
 
     ![alt text](/screenshot/homepage.png)
+
+# How does Microservice Architecture look like?
+
+This is how a monolith would look like. One application for everything.
+
+![alt text](/screenshot/MonolithApplication.png)
+
+### This is how the same application would look like when developed using Microservices Architecture.
+
+![alt text](/screenshot/MicroservicesArchitectureSplit.png)
+
+### Microservice Architectures involve a number of small, well designed, components interacting with messages.
+
+![alt text](/screenshot/Microservices-Chain-Example.png)
+
+# Advantages of Microservices
+
+New Technology & Process Adaption becomes easier. You can try new technologies with the newer microservices that we create.
+
+Faster Release Cycles
+
+Scaling with Cloud
+
+# In this Spring Boot microservices example, 
+
+Eureka Service- This service will register every microservice and then the client microservice will look up the Eureka server to get a dependent microservice to get the job done. This Eureka Server is owned by Netflix and in this, Spring Cloud offers a declarative way to register and invoke services by Java annotation.
+
+
+Item Catalog Service - This service will generate the list of sports brands which are popular in the market.
+
+Edge Service - It is similar to the standalone Item service created in Bootiful Development with Spring Boot and Angular. However, it will have fallback capabilities which prevent the client from receiving an HTTP error when the service is not available
+
+
+# Challenges with Microservice Architectures
+
+While developing a number of smaller components might look easy, there are a number of inherent complexities that are associated with microservices architectures.
+
+
+# Challenges With Microservice Architecture
+
+While developing a number of smaller microservices might look easy, there is a number of inherent complexities that are associated with microservices architectures. Let's look at some of the challenges:
+
+Automating the Components: It becomes difficult to automate everything because there are a number of smaller components instead of a monolith, i.e. builds, deployment, monitoring, etc.
+
+
+Perceptibility: There is a number of small components to deploy and maintain which sometimes becomes difficult to monitor and identify problems. It requires great perceptibility around all the components.
+
+
+Configuration Management: There is a great need to maintain the configurations for the components across the various environments.
+Debugging: It becomes difficult to probe each and every service for an error. Centralized Logging and Dashboards are essential to make it easy to debug problems.
+
+
+Consistency: You cannot have a wide range of tools solving the same problem. While it is important to foster innovation, it is also important to have some decentralized governance around the languages, platforms, technology and tools used for implementing/deploying/monitoring microservices.
+Building Architecture for Top Sports Brands With Spring Boot
+
+
+
+# Lets look at some of the challenges development:
+
+Quick Setup needed : You cannot spend a month setting up each microservice. You should be able to create microservices quickly.
+Automation : Because there are a number of smaller components instead of a monolith, you need to automate everything - Builds, Deployment, Monitoring etc.
+
+Visibility : You now have a number of smaller components to deploy and maintain. Maybe 100 or maybe 1000 components. You should be able to monitor and identify problems automatically. You need great visibility around all the components.
+
+Bounded Context : Deciding the boundaries of a microservice is not an easy task. Bounded Contexts from Domain Driven Design is a good starting point. Your understanding of the domain evolves over a period of time. You need to ensure that the microservice boundaries evolve.
+
+Configuration Management : You need to maintain configurations for hundreds of components across environments. You would need a Configuration Management solution
+
+Dynamic Scale Up and Scale Down : The advantages of microservices will only be realized if your applications can scaled up and down easily in the cloud.
+
+Pack of Cards : If a microservice at the bottom of the call chain fails, it can have knock on effects on all other microservices. Microservices should be fault tolerant by Design.
+
+Debugging : When there is a problem that needs investigation, you might need to look into multiple services across different components. Centralized Logging and Dashboards are essential to make it easy to debug problems.
+
+Consistency : You cannot have a wide range of tools solving the same problem. While it is important to foster innovation, it is also important to have some decentralized governance around the languages, platforms, technology and tools used for implementing/deploying/monitoring microservices.
+
